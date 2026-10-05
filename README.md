@@ -7,6 +7,9 @@ A modern marketplace app for selling healthy farm animals and fresh farm produce
 - Product catalog for animals and produce
 - Product detail pages
 - Shopping cart with quantity controls
+- Search and category filtering
+- Seller dashboard and admin overview
+- Checkout flow and account pages
 - Responsive layout built with Next.js and Tailwind CSS
 
 ## Tech stack

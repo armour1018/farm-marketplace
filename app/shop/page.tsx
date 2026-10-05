@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { ProductCard } from "@/components/product-card";
+import { ProductBrowser } from "@/components/product-browser";
 import { products } from "@/lib/products";
 
 export default function ShopPage() {
@@ -15,11 +15,7 @@ export default function ShopPage() {
         </Link>
       </div>
 
-      <div className="grid gap-6 md:grid-cols-2 xl:grid-cols-3">
-        {products.map((product) => (
-          <ProductCard key={product.id} product={product} />
-        ))}
-      </div>
+      <ProductBrowser initialProducts={products} />
     </div>
   );
 }

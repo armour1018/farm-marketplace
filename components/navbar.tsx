@@ -5,6 +5,8 @@ import { useCart } from "@/components/cart-provider";
 const navItems = [
   { href: "/", label: "Home" },
   { href: "/shop", label: "Shop" },
+  { href: "/sell", label: "Sell" },
+  { href: "/admin", label: "Dashboard" },
   { href: "/about", label: "About" },
   { href: "/contact", label: "Contact" },
 ];
@@ -37,6 +39,10 @@ export function Navbar() {
           <button className="hidden rounded-full border border-stone-200 bg-white p-2.5 text-stone-600 md:flex" aria-label="Search">
             <Search className="h-4 w-4" />
           </button>
+
+          <Link href="/login" className="hidden rounded-full border border-stone-200 bg-white px-4 py-2.5 text-sm font-semibold text-stone-800 transition hover:border-stone-300 md:inline-flex">
+            Login
+          </Link>
 
           <Link href="/cart" className="relative flex items-center gap-2 rounded-full bg-brand-600 px-4 py-2.5 text-sm font-semibold text-white shadow-soft transition hover:bg-brand-700">
             <ShoppingCart className="h-4 w-4" />
